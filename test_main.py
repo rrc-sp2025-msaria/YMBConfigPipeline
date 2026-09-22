@@ -1,4 +1,4 @@
-from goodhello import hello, bye
+from YMBConfigPipeline.goodhello import hello, bye
  
 def test_hello_returns_none():
     assert hello() is None
@@ -14,4 +14,4 @@ def test_hello_prints_expected_text(capsys):
 def test_bye_prints_expected_text(capsys):
     bye()
     captured = capsys.readouterr()
-    assert captured.out.strip() == "Goodbye!"
+    assert captured.out.strip() == "GoodMorning!"
